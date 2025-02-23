@@ -12,12 +12,25 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.home)
+          child: GestureDetector(
+            onTap: (){
+              print('Tapped');
+            },
+            onDoubleTap: (){
+              print('Double Tapped');
+            },onLongPress: (){
+              print('Long Pressed');
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.red,
+              ),
+              width: 100,
+              height: 100,
+              ),
+              )
+            ),
           ),
-        ),
-      ),
-    );
-  } 
+        );
+      } 
 }   
