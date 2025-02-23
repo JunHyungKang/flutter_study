@@ -12,28 +12,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SizedBox(
-          height: double.infinity,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
+          width: 200,
+          child: Column(
             children: [
-              Container(
-                color: Colors.red,
-                width: 50,
-                height: 50,
-              ),
-              const SizedBox(width: 20),
-              Container(
-                color: Colors.green,
-                width: 60,
-                height: 60,
-              ),
-              const SizedBox(width: 20),
-              Container(
-                color: Colors.blue,
-                width: 30,
-                height: 30,
-              ),
+              Flexible(
+                flex: 1,
+                child: Container(
+                  color: Colors.blue),
+                  ),
+              Flexible(
+                flex: 2,
+                child: Container(
+                  color: Colors.red),
+                  ),
             ],
           ),
         )
