@@ -11,11 +11,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: Text('Floating Action Button'),
+        body: Center(
+          child: Container(color: Colors.black,
+            child: Container(color: Colors.blue, margin: EdgeInsets.all(10),
+            child: Padding(padding: EdgeInsets.all(10),
+              child: Container(color: Colors.red, width: 50, height: 50,),
+            ),
+            ),
+          ),
         ),
-        body: Container()
       ),
     );
   } 
