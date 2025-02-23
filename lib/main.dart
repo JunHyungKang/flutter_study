@@ -12,19 +12,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: TextButton(
+          child: OutlinedButton(
             onPressed: () {},
-            style: TextButton.styleFrom(
+            style: OutlinedButton.styleFrom(
               foregroundColor: Colors.red,
+              backgroundColor: Colors.green,
             ),
-            child: Text('텍스트 버튼',
-            style: TextStyle(
-              fontSize: 30, // 원하는 폰트 크기로 변경
-            ),
+            child: Text('OutlinedButton'),
           ),
         ),
       ),
-    ),
     );
   } 
 }   
