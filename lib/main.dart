@@ -4,9 +4,15 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text(
-          'Hello Code Factory'),
+        body: SizedBox(
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Code'),
+              Text('Factory'),
+            ],
+          ),
         ),
       ),
     ),
