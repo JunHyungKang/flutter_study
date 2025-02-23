@@ -11,20 +11,32 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: SafeArea(
-            top: true,
-            bottom: true,
-            left: true,
-            right: true,
-            child: Container(
-              color: Colors.blue,
-              width: 200,
-              height: 200,
-              child: Text('Hello World'),
-            ),
-        ),
-      ),
+        body: SizedBox(
+          height: double.infinity,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                color: Colors.red,
+                width: 50,
+                height: 50,
+              ),
+              const SizedBox(width: 20),
+              Container(
+                color: Colors.green,
+                width: 60,
+                height: 60,
+              ),
+              const SizedBox(width: 20),
+              Container(
+                color: Colors.blue,
+                width: 30,
+                height: 30,
+              ),
+            ],
+          ),
+        )
       ),
     );
   } 
