@@ -10,16 +10,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('flutter study 어렵당',
-            style: TextStyle(
-              fontSize: 16.0,
-              color: Colors.blue,
-              // fontWeight: FontWeight.bold,
-              fontWeight: FontWeight.w700,
+          child: TextButton(
+            onPressed: () {},
+            style: TextButton.styleFrom(
+              foregroundColor: Colors.red,
+            ),
+            child: Text('텍스트 버튼'),
             ),
           ),
         ),
-      ),
-    );
-  }
-}
+      );
+    } 
+  }   
